@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Link to Google Fonts (Lora) -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
-        /* Basic Reset */
         * {
             margin: 0;
             padding: 0;
@@ -14,30 +16,40 @@
         }
 
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Lora', serif; 
             background-color: #f4f4f9;
-            color: #333;
+            color: #3e2723; /* chocolate brown */
+            font-weight: 400;
         }
 
-        /* Header / Menu Bar */
+        /* Header */
         header {
-            background-color: #333;
-            color: #fff;
+            background-color: #3e2723; /* brown color */
+            color: #f1e5d7; /* off-white beige color */
             height: 150px; 
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
         }
+      /* Added styles for the Shiba Inu image in the header */
+        .header-image {
+          width: 50px; /* Adjusted size to fit in the header */
+          height: auto;
+          position: absolute;
+          left: 20px; /* Aligns the image to the left */
+          top: 20px;  /* Adjusted vertical position */
+        }
 
-        /* Large Title Centered */
         h1 {
             font-size: 2.5rem;
-            margin-bottom: 10px;
+            font-family: 'Lora', serif; 
+            font-weight: 700; /* bold Lora font for the heading */
+            margin-bottom: 30px;
             text-align: center;
         }
 
-        /* Horizontal Navigation Menu */
+        /* navigation menu */
         nav ul {
             display: flex; 
             justify-content: center; 
@@ -49,22 +61,22 @@
         }
 
         nav ul li a {
-            color: #fff;
+            color: #f5cbd1; /* light pastel pink color for menu items */
             text-decoration: none;
-            font-weight: bold;
+            font-family: 'Lora', serif;
+            font-weight: 400;
             font-size: 1.2rem;
-            padding: 20px 15px;
+            padding: 10px 15px;
             transition: background-color 0.3s;
         }
 
         nav ul li a:hover {
-            background-color: #ff577f;
-            border-radius: 5px;
+            background-color: #997378;
+            border-radius: 10px;
         }
 
-        /* Section Styles */
         .section {
-            height: 100vh; /* Full height for each section */
+            height: 100vh;
             padding: 50px 20px;
             text-align: center;
             display: flex;
@@ -74,47 +86,57 @@
         }
 
         #home {
-            background-color: #f4f4f9;
+            background-color: #f1e5d7; /* offwhite colour for home page */
         }
 
         #portfolio {
-            background-color: #e2e2e2;
+            background-color: #997378; /* pastel pink colour for portfolio page */
         }
 
         #contact {
-            background-color: #f4f4f9;
+            background-color: #f1e5d7; /* offwhite colour for contact page */
         }
 
         h2 {
             font-size: 2rem;
+            font-family: 'Lora', serif; 
+            font-weight: 700; /* bold Lora font for sub-headings */
             margin-bottom: 20px;
         }
 
         p {
             margin-bottom: 20px;
+            font-family: 'Lora', serif;
+            font-weight: 400;
         }
 
-        /* Portfolio Grid */
+        /* portfolio grid with 6 boxes in 3x2 layout */
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            grid-template-rows: repeat(2, 1fr); /* 2 rows */
             gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 100px;
         }
 
         .box {
-            background-color: #ff577f;
-            color: #fff;
-            padding: 40px;
+            background-color: #f1e5d7;
+            color: #3e2723;
+            padding: 80px;
             text-align: center;
-            border-radius: 5px;
+            border-radius: 20px;
             transition: transform 0.3s;
+            font-family: 'Lora', serif;
+            font-weight: 400;
         }
 
         .box:hover {
             transform: scale(1.05);
         }
 
-        /* Contact Form */
+        /* contact form */
         form {
             display: flex;
             flex-direction: column;
@@ -124,7 +146,8 @@
 
         form label {
             margin-bottom: 5px;
-            font-weight: bold;
+            font-weight: 700; 
+            font-family: 'Lora', serif;
         }
 
         form input, 
@@ -134,10 +157,12 @@
             margin-bottom: 20px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            font-family: 'Lora', serif;
+            font-weight: 400; 
         }
 
         button {
-            background-color: #ff577f;
+            background-color: #997378;
             color: #fff;
             border: none;
             padding: 10px 20px;
@@ -145,30 +170,75 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s;
+            font-family: 'Lora', serif;
+            font-weight: 400; 
         }
-
+        
+        /*send button*/
         button:hover {
-            background-color: #ff3366;
+            background-color: #3e2723;
         }
 
-        /* Footer */
+        /* footer */
         footer {
-            background-color: #333;
+            background-color: #3e2723;
             color: #fff;
             text-align: center;
             padding: 1em 0;
             position: relative;
             bottom: 0;
             width: 100%;
+            font-family: 'Lora', serif;
+            font-weight: 400; 
         }
 
+        /* About Me Section within Home Page */
+        #about-me {
+            padding: 10px;
+            color: #3e2723; /* chocolate brown */
+            text-align: left;
+            font-size: 1rem;
+            width: 60%; /* Set the width to 80% of the screen */
+            margin-top: -90px; /* Move it up a bit higher */
+            margin-bottom: 50px;
+            margin-left: -250px;
+            position: relative;
+            left: 0; /* Align to the left */
+        }
+
+        #about-me h3 {
+            color: #3e2723;
+            font-size: 2rem;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            font-weight: 700;
+        }
+
+        /* About Me Text Box */
+        #about-me-box {
+            background-color: #997378; /* same as portfolio section color */
+            padding: 20px;
+            border-radius: 20px;
+            color: #f1e5d7; /* off-white beige color */
+        }
+
+        .about-image {
+            width: 200px; /* Set the image width */
+            height: auto;
+            margin-top: -500px;
+            margin-right: -450px; /* Space between image and text */
+            border-radius: 10px; /* Optional: Adds rounded corners to the image */
+        }
+      
     </style>
 </head>
 <body>
 
-    <!-- Header / Navigation Bar -->
+    <!-- header -->
     <header>
-        <h1>My Portfolio</h1>
+        <img src="shiba_inu.gif" alt="Shiba Inu" class="header-image">
+        <h1>Evelyn Chao</h1>
         <nav>
             <ul id="dropdown-menu">
                 <li><a href="#home">Home</a></li>
@@ -178,27 +248,37 @@
         </nav>
     </header>
 
-    <!-- Home Section -->
+    <!-- Home Page with About Me -->
     <section id="home" class="section">
-        <h2>Welcome to My Portfolio</h2>
-        <p>Hi there! I'm passionate about digital arts and marketing. Scroll down to see my work!</p>
+        <div id="about-me">
+            <h3>About Me</h3>
+            <div id="about-me-box">
+                <p>Hello! My name is Evelyn Chao and I am a UX design enthusiast from the Greater Toronto Area (GTA) currently pursuing a career in UX design through the GBDA program. My journey revolves around drawing and creating digital designs using Photoshop and Procreate, which are some of my favorite activities.</p>
+                <p>In addition to my design work, I enjoy spending time with my dog, Latte, and currently foster cats in Waterloo. Outside of work, I love hanging out in cafes, sipping matcha with friends, and enjoying the calming atmosphere. Swimming and skiing are two of my favorite ways to stay active and embrace the seasons, especially in the crisp fall weather, my favorite time of year!</p>
+                <p>Fashion is another passion of mine, and I enjoy expressing myself through unique, stylish clothing. I love shopping for new pieces that reflect my personality. Check out my art and projects below to see some of my work!</p>
+            </div>
+        </div>
+        <div>
+            <img src="Picture of me.jpg" alt="Evelyn Chao" class="about-image">
+        </div>
     </section>
 
-    <!-- Portfolio Section -->
+    <!-- portfolio page -->
     <section id="portfolio" class="section">
-        <h2>My Portfolio</h2>
+        <h2>My portfolio</h2>
         <div class="grid">
             <div class="box">Project 1</div>
             <div class="box">Project 2</div>
             <div class="box">Project 3</div>
             <div class="box">Project 4</div>
+            <div class="box">Project 5</div>
+            <div class="box">Project 6</div>
         </div>
     </section>
 
     <!-- Contact Me Section -->
     <section id="contact" class="section">
-        <h2>Contact Me</h2>
-        <p>Want to connect? Fill out the form below!</p>
+        <h2>Connect With Me!</h2>
         <form>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -215,7 +295,9 @@
 
     <!-- Footer -->
     <footer>
-        <p>© 2024 My Portfolio. All rights reserved.</p>
+        <p>Contact Me</p>
+        <p>Email: eachao@uwaterloo.ca</p>
+        <p>Phone: (647)-395-1923</p>
     </footer>
 
 </body>
