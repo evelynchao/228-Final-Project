@@ -147,7 +147,6 @@
         .portfolio-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 1fr);
             gap: 20px;
             width: 100%;
         }
@@ -166,11 +165,12 @@
         }
 
         .portfolio-text {
-            grid-column: 2 / span 1;
-            grid-row: span 2;
             display: flex;
-            align-items: center;
+            flex-direction: column;
             justify-content: center;
+            align-items: center;
+            gap: 20px;
+            grid-column: 2 / span 1;
             background-color: transparent;
             color: #3e2723;
             text-align: center;
@@ -250,8 +250,13 @@
             </div>
             <div class="portfolio-text">
                 <p>Photography pictures projects sdkjcnsdkjcnsdkjcnsdkcnsdkjcnsdkcnsdkjcnskdjcnskdjcn sdkcjsdkncsjdkncsjdkcnjscndkjsndckjsndckjsdnc.</p>
+                <p>Additional text about projects: explaining details about creative process, tools used, and inspirations.</p>
             </div>
             <div class="box">Project 2</div>
+            <div class="portfolio-text">
+                <p>Detailed project descriptions explaining techniques, design choices, and key learnings.</p>
+                <p>Insights gained through the creative process shared for each individual work.</p>
+            </div>
             <div class="box">Project 3</div>
             <div class="box">Project 4</div>
         </div>
