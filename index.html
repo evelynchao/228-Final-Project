@@ -75,8 +75,8 @@
 
         .section {
             padding: 50px 20px;
-            width: 100%; /* Full width to match header and footer */
-            max-width: none; /* Remove max-width constraint */
+            width: 100%;
+            max-width: none;
             margin: 0 auto;
         }
 
@@ -84,7 +84,7 @@
             background-color: #997378;
             color: #3e2723;
             text-align: right;
-            height: 100vh; /* Set to screen height */
+            height: 100vh;
         }
 
         #home h2, #home p {
@@ -146,8 +146,10 @@
 
         .portfolio-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
             gap: 20px;
+            align-items: center;
             width: 100%;
         }
 
@@ -155,8 +157,11 @@
             background-color: #f1e5d7;
             color: #3e2723;
             text-align: center;
-            padding: 80px;
+            padding: 50px;
             border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             transition: transform 0.3s;
         }
 
@@ -165,25 +170,19 @@
         }
 
         .portfolio-text {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
             grid-column: 2 / span 1;
-            background-color: transparent;
-            color: #3e2723;
             text-align: center;
             font-family: 'Lora', serif;
             font-size: 1.2rem;
             line-height: 1.5;
+            color: #3e2723;
         }
 
         .portfolio-image {
-            width: 100%; /* Ensure the image fills the box width */
-            height: 100%; /* Ensure the image fills the box height */
-            object-fit: cover; /* Maintain aspect ratio while covering the entire box */
-            border-radius: 20px; /* Match the box border radius */
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 20px;
         }
 
         #contact {
@@ -244,25 +243,27 @@
     <section id="portfolio" class="section">
         <h2>My Portfolio</h2>
         <div class="portfolio-grid">
+            <!-- Upper Row -->
             <div class="box">
                 <img src="Fashion-small.jpg" alt="Jewelry and Fashion" class="portfolio-image">
+            </div>
+            <div class="portfolio-text">
+                <p>Photography pictures projects sdkjcnsdkjcnsdkjcnsdkcnsdkjcnsdkcnsdkjcnskdjcnskdjcn.</p>
             </div>
             <div class="box">
                 <img src="Action-small.jpg" alt="Action Project" class="portfolio-image">
             </div>
-            <div class="portfolio-text">
-                <p>Photography pictures projects sdkjcnsdkjcnsdkjcnsdkcnsdkjcnsdkcnsdkjcnskdjcnskdjcn sdkcjsdkncsjdkncsjdkcnjscndkjsndckjsndckjsdnc.</p>
-                <p>Additional text about projects: explaining details about creative process, tools used, and inspirations.</p>
-            </div>
+
+            <!-- Lower Row -->
             <div class="box">
                 <img src="Sculpture sketch.jpg" alt="Sculpture Sketch" class="portfolio-image">
             </div>
             <div class="portfolio-text">
-                <p>Detailed project descriptions explaining techniques, design choices, and key learnings.</p>
-                <p>Insights gained through the creative process shared for each individual work.</p>
+                <p>Eye sketches and artistic compositions showcasing intricate detail and skill.</p>
             </div>
-            <div class="box">Project 3</div>
-            <div class="box">Project 4</div>
+            <div class="box">
+                <img src="Eye sketch.jpg" alt="Eye Sketch" class="portfolio-image">
+            </div>
         </div>
     </section>
 
