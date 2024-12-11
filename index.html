@@ -144,6 +144,13 @@
             transform: scale(1.05);
         }
 
+        .portfolio-image {
+            width: 100%; /* Ensure the image fills the box width */
+            height: 100%; /* Ensure the image fills the box height */
+            object-fit: cover; /* Maintain aspect ratio while covering the entire box */
+            border-radius: 20px; /* Match the box border radius */
+        }
+
         #contact {
             background-color: #f1e5d7;
             color: #3e2723;
@@ -201,7 +208,7 @@
         <h2>My Portfolio</h2>
         <div class="grid">
             <div class="box">
-                <img src="Fashion-small.JPG" alt="Jewelry and Fashion" class="portfolio-image">
+                <img src="Fashion-small.jpg" alt="Jewelry and Fashion" class="portfolio-image">
             </div>
             <div class="box">Project 2</div>
             <div class="box">Project 3</div>
