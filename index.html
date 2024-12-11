@@ -84,11 +84,41 @@
             background-color: #997378;
             color: #3e2723;
             text-align: right;
-            height: 100vh;
+            height: 50vh; /* Reduced height */
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
         }
 
         #home h2, #home p {
             margin-right: 20px;
+        }
+
+        #resume-link {
+            text-align: left;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        #resume-link h2 {
+            font-size: 1.5rem;
+            color: #3e2723;
+        }
+
+        #resume-link a {
+            display: inline-block;
+            background-color: #3e2723;
+            color: #f1e5d7;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin-top: 10px;
+            font-size: 1rem;
+            font-family: 'Lora', serif;
+        }
+
+        #resume-link a:hover {
+            background-color: #997378;
         }
 
         #about-me {
@@ -223,8 +253,14 @@
     </header>
 
     <section id="home" class="section">
-        <h2>228 Website Design Project</h2>
-        <p>Personal Website Design for class 228 - HTML. Create a personal website about yourself.</p>
+        <div>
+            <h2>228 Website Design Project</h2>
+            <p>Personal Website Design for class 228 - HTML. Create a personal website about yourself.</p>
+        </div>
+        <div id="resume-link">
+            <h2>Click here for my resume</h2>
+            <a href="Evelyn Chao - Resume.pdf" target="_blank">Resume</a>
+        </div>
     </section>
 
     <section id="about-me" class="section">
@@ -255,13 +291,13 @@
 
             <!-- Lower Row -->
             <div class="box">
-                <img src="sculpture sketch.jpg" alt="Sculpture Sketch" class="portfolio-image">
+                <img src="Sculpture sketch.jpg" alt="Sculpture Sketch" class="portfolio-image">
             </div>
             <div class="portfolio-text">
                 <p>Eye sketches and artistic compositions showcasing intricate detail and skill.</p>
             </div>
             <div class="box">
-                <img src="eye sketch.jpg" alt="Eye Sketch" class="portfolio-image">
+                <img src="Eye sketch.jpg" alt="Eye Sketch" class="portfolio-image">
             </div>
         </div>
     </section>
