@@ -18,33 +18,33 @@
         body {
             font-family: 'Lora', serif; 
             background-color: #f4f4f9;
-            color: #3e2723; /* chocolate brown */
+            color: #3e2723; /* brown */
             font-weight: 400;
         }
 
         /* Header */
         header {
-            background-color: #3e2723; /* brown color */
-            color: #f1e5d7; /* off-white beige color */
+            background-color: #3e2723; /* brown  */
+            color: #f1e5d7; /* off-white beige  */
             height: 150px; 
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
         }
-      /* Added styles for the Shiba Inu image in the header */
+      
         .header-image {
-          width: 130px; /* Adjusted size to fit in the header */
+          width: 130px; 
           height: auto;
           position: absolute;
-          left: 20px; /* Aligns the image to the left */
-          top: 20px;  /* Adjusted vertical position */
+          left: 20px; 
+          top: 20px;  
         }
 
         h1 {
             font-size: 2.5rem;
             font-family: 'Lora', serif; 
-            font-weight: 700; /* bold Lora font for the heading */
+            font-weight: 700; 
             margin-bottom: 30px;
             text-align: center;
         }
@@ -61,7 +61,7 @@
         }
 
         nav ul li a {
-            color: #f5cbd1; /* light pastel pink color for menu items */
+            color: #f5cbd1; /* pink */
             text-decoration: none;
             font-family: 'Lora', serif;
             font-weight: 400;
@@ -85,34 +85,115 @@
             align-items: center;
         }
       
-      #home {
-        background-color: #997378;
+        #home {
+            background-color: #997378;
       }
-
-        #aboutm-me {
-            background-color: #f1e5d7; /* offwhite colour for home page */
-        }
-
-        #portfolio {
-            background-color: #997378; /* pastel pink colour for portfolio page */
-        }
-
-        #contact {
-            background-color: #f1e5d7; /* offwhite colour for contact page */
-        }
-
+            /*home page*/
+        #home-page {
+            padding: 10px;
+            color: #3e2723; /*brown*/
+            text-align: right;
+            font-size: 1rem;
+            width: 60%;
+            margin-top: -90px;
+            margin-bottom: 50px;
+            margin-right: -250px;
+            position: relative;
+            left: 0;
+        
+      }
+      
         h2 {
             font-size: 2rem;
             font-family: 'Lora', serif; 
-            font-weight: 700; /* bold Lora font for sub-headings */
+            font-weight: 700; 
             margin-bottom: 20px;
         }
-
+      
         p {
             margin-bottom: 20px;
             font-family: 'Lora', serif;
             font-weight: 400;
         }
+      
+      #home h2 {
+            color: #3e2723;
+            font-size: 2.2rem;
+            text-align: right;
+            margin-bottom: 30px;
+            margin-left: 200px;
+            font-weight: 700;
+      }
+      
+      #home p {
+            color: #3e2723;
+            font-size: 1.1rem;
+            text-align: right;
+            margin-left: 270px;
+            margin-bottom: 400px;
+            font-weight: 500;
+      }
+      
+      /* box uner text */
+      #home-box {
+          background-color: #f1e5d7;
+          padding: 0px;
+          border-radius: 20px; 
+          width: 100%;
+          height: 50%;
+          margin-bottom: 200px;
+      }
+      
+      #about-me {
+            background-color: #f1e5d7; /* offwhite beige */
+            padding: 20px;  
+            color: #3e2723; /* brown */
+            text-align: left;
+            font-size: 1rem;
+            width: 110%;
+            min-height: 100vh; 
+            box-sizing: border-box;
+            margin-left: 0px;
+            margin-right: 0px;
+            display: flex;
+            flex-direction: column;
+}
+
+        #about-me h3 {
+            color: #3e2723;
+            font-size: 2rem;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            margin-left: 30px;
+            font-weight: 700;
+        }
+
+        /* About Me Text Box */
+        #about-me-box {
+            background-color: #997378; /* dusty pink */
+            width: 60%;
+            margin-right: 300px;
+            margin-left: 20px;
+            padding: 20px;
+            border-radius: 20px;
+            color: #f1e5d7; /* off-white beige */
+        }
+
+        .about-image {
+            width: 200px; 
+            height: auto;
+            margin-top: -500px;
+            margin-right: -450px; 
+            border-radius: 10px;
+        }
+
+        #portfolio {
+            background-color: #997378; /*dusty pink */
+        }
+
+        #contact {
+            background-color: #f1e5d7; /* offwhite */
+      }
 
         /* portfolio grid with 6 boxes in 3x2 layout */
         .grid {
@@ -194,62 +275,8 @@
             width: 100%;
             font-family: 'Lora', serif;
             font-weight: 400; 
-        }
-      
-      /*home page*/
-        #home {
-            padding: 10px;
-            color: #3e2723; /*brown*/
-            text-align: right;
-            fon-size: 1rem;
-            width:60%
-            margin-top: -90px;
-            margin-bottom: 50px;
-            margin-right: -250px;
-            position: relative;
-            left: 0;
-        
       }
-      
-      /* About Me Section within Home Page */
-        #about-me {
-            padding: 10px;
-            color: #3e2723; /* chocolate brown */
-            text-align: left;
-            font-size: 1rem;
-            width: 60%; /* Set the width to 80% of the screen */
-            margin-top: -90px; /* Move it up a bit higher */
-            margin-bottom: 50px;
-            margin-left: -250px;
-            position: relative;
-            left: 0; /* Align to the left */
-        }
 
-        #about-me h3 {
-            color: #3e2723;
-            font-size: 2rem;
-            margin-top: 30px;
-            margin-bottom: 10px;
-            margin-left: 10px;
-            font-weight: 700;
-        }
-
-        /* About Me Text Box */
-        #about-me-box {
-            background-color: #997378; /* same as portfolio section color */
-            padding: 20px;
-            border-radius: 20px;
-            color: #f1e5d7; /* off-white beige color */
-        }
-
-        .about-image {
-            width: 200px; /* Set the image width */
-            height: auto;
-            margin-top: -500px;
-            margin-right: -450px; /* Space between image and text */
-            border-radius: 10px; /* Optional: Adds rounded corners to the image */
-        }
-      
     </style>
 </head>
 <body>
@@ -260,7 +287,7 @@
         <h1>Evelyn Chao</h1>
         <nav>
             <ul id="dropdown-menu">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About Me</a></li> 
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact Me</a></li>
             </ul>
@@ -269,8 +296,12 @@
     
     <!--- home page -->
      <section id="home" class="section">
-        <h2>Welcome to My Space</h2>
-        <p>Discover my creative journey and the projects that showcase my passion for UX design and digital art.</p>
+        <div id="home-page">
+        <div id="home-box">
+            <h2>228 Website Design Project</h2>
+            <p>Personal Website Design for class 228 - HTML. Create personal website about yourself.</p>
+        </div>
+      </div>
     </section>
   
     <!-- about me page -->
@@ -278,8 +309,8 @@
         <div id="about-me">
             <h3>About Me</h3>
             <div id="about-me-box">
-                <p>Hello! My name is Evelyn Chao and I am a UX design enthusiast from the Greater Toronto Area (GTA) currently pursuing a career in UX design through the GBDA program. My journey revolves around drawing and creating digital designs using Photoshop and Procreate, which are some of my favorite activities.</p>
-                <p>In addition to my design work, I enjoy spending time with my dog, Latte, and currently foster cats in Waterloo. Outside of work, I love hanging out in cafes, sipping matcha with friends, and enjoying the calming atmosphere. Swimming and skiing are two of my favorite ways to stay active and embrace the seasons, especially in the crisp fall weather, my favorite time of year!</p>
+                <p>Hello! My name is Evelyn Chao and I am a UX design enthusiast from the Greater Toronto Area (GTA) currently pursuing a career in UX design through the GBDA program. My journey revolves around drawing and creating digital designs using Photoshop and Procreate, which are some of my favourite activities.</p>
+                <p>In addition to my design work, I enjoy spending time with my dog, Latte, and currently foster cats in Waterloo. Outside of work, I love hanging out in cafes, sipping matcha with friends, and enjoying the calming atmosphere. Swimming and skiing are two of my favourite ways to stay active and embrace the seasons, especially in the crisp fall weather, my favourite time of year!</p>
                 <p>Fashion is another passion of mine, and I enjoy expressing myself through unique, stylish clothing. I love shopping for new pieces that reflect my personality. Check out my art and projects below to see some of my work!</p>
             </div>
         </div>
